@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Chessboard
+A React-based chessboard application that allows users to interact with the board, highlighting the clicked squares and displaying diagonal moves. The project includes features like highlighting clicked squares, undo functionality, and an aesthetically pleasing design.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+Interactive Chessboard: Click on any square to highlight diagonal squares in red.
+Display Clicked State: The clicked square shows a "Clicked" label.
+Undo Button: Revert to the previous state by undoing the last action.
+Responsive Design: The application is responsive and maintains a consistent appearance across devices.
+Customizable: Easy to modify styles and behavior through CSS and React components.
 
-## Available Scripts
+## Prerequisites
+To run this project locally, you need to have the following installed:
+Node.js (v14 or higher)
+npm (v6 or higher) or Yarn (v1.22 or higher)
 
-In the project directory, you can run:
+## Setup Instructions
+Clone the Repository
+git clone https://github.com/your-username/chessboard.git
 
-### `npm start`
+Navigate to the project directory:
+cd chessboard
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Install Dependencies
+Use npm or Yarn to install the required dependencies:
+npm install
+or
+yarn install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Run the Application
+To start the development server, run:
+npm start
+or
+yarn start
 
-### `npm test`
+## Project Structure
+src/
+components/
+Chessboard.js: Main component that renders the chessboard and handles game logic.
+Square.js: Component for individual squares on the chessboard.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+styles/
+Chessboard.css: Styles for the chessboard and surrounding layout.
+Square.css: Styles for individual squares on the board.
 
-### `npm run build`
+App.js: Root component that sets up the application.
+index.js: Entry point of the React application.
+How to Use
+Interacting with the Board
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Click on any square to see the diagonal squares highlighted in red.
+The clicked square will display a "Clicked" label.
+Undo Action
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Click the "Undo" button to revert the last action and remove the highlighting from the board.
+Customization
+To customize the look and feel of the chessboard or modify its behavior:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Styles: Update the CSS files in the styles directory.
+Behavior: Modify the logic in Chessboard.js and Square.js components.
 
-### `npm run eject`
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Contributing
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments
+React and its ecosystem for providing a robust platform for building this application.
+CSS community for inspiring the styling used in the project.
